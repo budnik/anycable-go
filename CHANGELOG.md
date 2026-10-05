@@ -2,6 +2,8 @@
 
 ## master
 
+- Fix broadcast message data losing integer precision for numbers larger than 2^53 (e.g., Facebook/Snowflake-style ids) when re-encoded for delivery to clients.
+
 ## 1.6.0-dev
 
 - Presence tracking support for pub/sub streams (see [docs](https://docs.anycable.io/edge/anycable-go/presence)). ([@palkan][])
